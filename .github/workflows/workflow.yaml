@@ -1,6 +1,17 @@
-- name: html to pdf
-  uses: fifsky/html-to-pdf-action@master
-  with:
-    htmlFile: ./public/index.html
-    outputFile: ./public/resume.pdf
-    pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+name: workflow
+on: [push]
+jobs:
+  build_pdf:
+    name: build pdf
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: fifsky/html-to-pdf-action@master
+        with:
+          htmlFile: ./index.html
+          outputFile: ./resume.pdf
+          pdfOptions: '{"format": "A4", "scale": "0.86", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+      - uses: actions/upload-artifact@v3
+        with:
+          name: Resume PDF
+          path: ./resume.pdf
