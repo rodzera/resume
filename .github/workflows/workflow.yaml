@@ -2,9 +2,9 @@ name: Build resume
 on:
   push:
     tags:
-      - "v*.*.*"
+      - "*"
 jobs:
-  build:
+  build_pdf:
     runs-on: ubuntu-latest
     defaults:
       run:
