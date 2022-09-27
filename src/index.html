@@ -1,95 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>resume</title>
-  <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-  <header>
-    <h1>Rodrigo do Nascimento Lopes</h1>
-    <p>
-      <a href="tel:+5511930779075"><i>+55 11 93077 9075</i></a><br>
-      <a href="mailto:rodnascimentolopes@gmail.com" target="_blank"><i>rodnascimentolopes@gmail.com</i></a><br>
-      São Paulo - SP - Brazil<br>
-    </p>
-  </header>
-  <main>
-    <section>
-      <h2>About Me</h2>
-      <p>I'm an junior software engineer and an undergraduate student of system analysis and development. My main focus is at backend and cybersecurity development, but I'm constantly challenging myself to study other subjects.</p>
-  
-      <h2>Education</h2>
-      <h3>Technologist Degree at College of Technology of São Caetano do Sul (FATEC-SCS)</h3>
-      <li>Systems Analysis and Development (aug/2019 - currently).<small class="no-mt">Not concluded | Morning shift.</small></li> 
-      
-      <h3>Undergraduate Research Project at PUC-SP</h3>
-      <p><b>Title:</b> Escarificações como práticas de transformações - Relações entre ameríndios e missionários no rio Ucayali no século XVIII (aug/2016 - jul/2017).<br>
-      <b>Funding agency and Scolarship:</b> National Council for Scientific and Technological Development (CNPq).<br>
-      <b>Line of Research:</b> Ethnology; Indigenous history; Colonial history; Amazon history.<small class="no-mt">Concluded.</small></p>
-      
-      <h3>Undergraduate Degree at Pontifical Catholic University of São Paulo (PUC-SP)</h3>
-      <li>License in History (feb/2015 - dec/2017).<small class="no-mt">Concluded.</small></li>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Rodrigo do Nascimento Lopes</h1>
+      <p class="profile">
+        <a href="tel:+5511930779075"><i>+55 11 93077 9075</i></a><br>
+        <a href="mailto:rodnascimentolopes@gmail.com" target="_blank"><i>rodnascimentolopes@gmail.com</i></a><br>
+        Sao Paulo - Sao Paulo - BR<br>
+      </p>
+    </header>
+    <main>
+      <section>
 
-      <h3>Secondary School</h3>
-      <li>Rama High School (dec/2013).<small class="no-mt">Concluded.</small></li>     
+        <!-- About Me -->
+        <div>
+          <h2>About Me</h2>
+          <p>I'm an junior software engineer and an undergraduate student of systems analysis and development. My main interest is in backend and web development. I'm also interested in cibersecurity, open source projects, functional programming and learning new subjects outside the field of information technology.</p>
+        </div>
+    
+        <!-- Education -->
+        <div>
+          <h2>Education</h2>
 
-      <h2>Language Skills</h2>
-      <h3>English</h3> 
-      <p>Advanced reading and listening. Intermediate writing and conversation.</p>
-      <h3>Spanish</h3>
-      <p>Intermediate reading and listening. Basic writing and conversation.</p>
-      <h2>Volunteer Experiences</h2>
-      <h3>Angela Davis Preparatory Course</h3>
-      <li>History teacher (aug/2018 – apr/2019).</li>
+          <h3>Technologist Degree at College of Technology of São Caetano do Sul (FATEC-SCS)</h3>
+          <p><span>Course:</span> Systems Analysis and Development (aug/2019 - present).</p> 
 
-      <h3>Mafalda Preparatory Course</h3>
-      <li>History teacher (aug/2018 - dec/2018).</li>
+          <h3>Licentiate Degree at Pontifical Catholic University of São Paulo (PUC-SP)</h3>
+          <p><span>Course:</span> History (feb/2015 - dec/2017).</p>    
+        </div>
 
-      <h2>Honors</h2>
-      <h3>Honourable Mention Award</h3>
-      <p>Honourable mention received for the undergraduate research project at PUC-SP (mar/2018).</p>
-    </section>
+        <!-- Projects -->
+        <div>
+          <h2>Projects</h2>
 
-    <section>
-      <h2>Professional Experience </h2>
-      <h3>Sec4You Cybersecurity</h3>
-      <li>Junior Software Engineer (fev/2022 - currently).</li>
-      <li>Software Engineer Intern (fev/2021 - jan/2022).</li>
-			<p class="description"><b>Description:</b> Internship programme consisting of developing, testing and maintaining cybersecurity products like Authfy-Hub (Multi Factor Authentication Orchestration), Authfy-Risky (Risk Provider), Authfy-OTP (Multi-Factor Authenticaticator Provider).</p>
-      
-      <h3>Wifi Digital Marketing Agency</h3>
-      <li>Web Developer (dec/2020 - jan/2021).</li>
-			<p class="description"><b>Description:</b> WordPress websites development, maintenance and hosting.</p>     
-      
-      <h2>Skills</h2>
-      <h3>Front-End</h3>
-      <li>HTML, Bootstrap, CSS, Sass.</li>
-      <li>JavaScript, jQuery.</li> 
-      <li>WTForms</li>
+          <h3>Sec4U Cyber Identity</h3>
+          <p><span>Title:</span> OpenApp (jul/2022 - sep/2022)</p>
+          <p><span>Summary:</span> OpenApp is a react native mobile app (Relying Party) that consumes an OpenID Provider (Authfy-Connect) with <span>authorization code flow</span>. Also consumes a protected mock service in Flask with an <span>user_bearer</span> token. Kong API Gateway exposes the Authfy-Connect APIs with a <span>privileged_client_bearer</span> token and <span>DDoS</span> protection. Also exposes the mock service with <span>JWT</span> and <span>introspection</span> validation.</p>
+          <p><span>Tech stack:</span> React Native; Flask; Docker; CircleCI; Kong API Gateway; Oauth/OpenID; Multi-Factor Authentication; Risk Authentication.</p>
 
-      <h3 class="h3-top-margin">Back-End</h3>
-      <li>Python: Flask, Flask-SQLAlchemy, Flask-Migrate, Flask-Testing, Swagger, Marshmallow, Waitress.</li>
-      <li>REST API development.</li>
-      <li>Knowledge in networks, HTTP and API protocols.</li>
-      <li>Basic knowloge in node.js</li>
-      <li>Testing: Unittest, Pytest, Behave (behavior driven development), Hypothesis (property based tests).</li>
-      <li>Databases: Postgres, MySQL, SQLite.</li>
-      <li>PyCharm/WebStorm IDE.</li>
-      <li>Git/Github.</li>
-      <h3 class="h3-top-margin">SecOps</h3>
-      <li>Docker, CircleCI, GitHub Actions, Pulumi, VirtualBox.</li>
-      <h3 class="h3-top-margin">OS / CLI</h3>
-      <li>Linux (Debian/Arch based).</li>
-      <li>Shell/Bash scripting.</li>
+          <h3>Undergraduate Research Project at PUC-SP</h3>
+          <p><span>Title:</span> Escarificações como práticas de transformações - Relações entre ameríndios e missionários no rio Ucayali no século XVIII (aug/2016 - aug/2017).</p>
+          <p><span>Funding agency and Scolarship:</span> National Council for Scientific and Technological Development (CNPq).</p>
+          <p><span>Line of Research:</span> Ethnology; Indigenous history; Colonial history; Amazon history.</p>
 
-      <h2>Links</h2>
-      <h3>GitHub</h3>
-      <p><a href="https://github.com/rodzera" target="_blank"><i>https://github.com/rodzera</i></a></p>
-      <h3>Linkedin</h3>
-      <p><a href="https://www.linkedin.com/in/rodnascimentolopes" target="_blank"><i>www.linkedin.com/in/rodnascimentolopes</i></a></p>
-    </section>
-  </main>    
-</body>
+        </div>
+
+        <!-- Languages -->
+        <div>
+          <h2>Languages</h2>
+
+          <h3>Portuguese</h3> 
+          <p>Native speaker.</p>
+
+          <h3>English</h3> 
+          <p>Advanced reading and listening. Intermediate writing and conversation.</p>
+
+          <h3>Spanish</h3>
+          <p>Intermediate reading and listening. Basic writing and conversation.</p>
+        </div>
+
+        <!-- Volunteer Experiences-->
+        <div>
+          <h2>Volunteer Experience</h2>
+
+          <h3>Angela Davis Preparatory Course</h3>
+          <p><span>Position:</span> History teacher (aug/2018 – apr/2019).</p>
+
+          <h3>Mafalda Preparatory Course</h3>
+          <p><span>Position:</span> History teacher (aug/2018 - dec/2018).</p>
+        </div>
+
+        <!-- Awards-->
+        <div>
+          <h2>Awards</h2>
+          <h3>Honourable Mention Award</h3>
+          <p><span>Summary:</span> Honourable mention received for the undergraduate research project at PUC-SP during the Licentiate degree in history (mar/2018).</p>
+        </div>
+
+      </section>
+      <section>
+
+        <!-- Work -->
+        <div>
+          <h2>Professional Experience</h2>
+
+          <h3>Sec4U Cyber Identity</h3>
+          <p><span>Position:</span> Junior Software Engineer (fev/2022 - present).</p>
+          <p>
+            <span>Summary:</span> Daily tasks consisting of developing, testing and maintaining the <span>Authfy platform</span> (MFA orchestrator, MFA provider, Risk Evaluator, OpenID Provider, etc). Responsible for teaching and evaluating intern's progress during the internship programme. Also developing PoCs of new technologies.
+          </p>
+          <p><span>Tech stack:</span> Flask; SQLAlchemy; Swagger; Docker; CircleCI; Linux; OpenLDAP; Multi-Factor Authentication; Risk Authentication; Oauth/OpenID.</p>
+
+          <h3>Sec4U Cyber Identity</h3>
+          <p><span>Position:</span> Software Engineer Intern (fev/2021 - fev/2022).</p>
+          <p><span>Summary:</span> Internship programme consisting of learning the tech stack. Afterwards developing, testing and maintaining the <span>Authfy platform</span> (MFA orchestrator, MFA provider, Risk Evaluator, etc).</p>
+          <p><span>Tech stack:</span> Flask; SQLAlchemy; Swagger; Docker; CircleCI; Linux; OpenLDAP; Multi-Factor Authentication; Risk Authentication.</p>
+
+          <h3>Wifi Digital Marketing Agency</h3>
+          <p><span>Position:</span> Web Developer (dec/2020 - jan/2021).</p>
+          <p><span>Summary:</span> WordPress websites development, maintenance and hosting.</p>  
+        </div>
+
+        <!-- Skills -->
+        <div>
+          <h2>Skills</h2>
+
+          <h3>Languages</h3>
+          <p>Python; Javascript/Node.js; Shell/Bash Scripting.</p>
+          
+          <h3>Frameworks</h3>
+          <p>Flask; React Native; Bootstrap; Pytest; Bahave.</p>
+
+          <h3>Libraries</h3>
+          <p>Flask-SQLAlchemy; Flask-Migrate; Flask-Testing; Flasgger; Flask-Marshmallow; Flask-WTForms; Waitress; Requests;  Unittest; Hypothesis.</p>
+    
+          <h3>Testing</h3>
+          <p>Unit Testing; Integration Testing; Behavior Driven Testing; Property Based Testing.</p>
+          
+          <h3>Databases</h3>
+          <p>Postgres; MySQL; SQLite.</p>
+    
+          <h3>DevOps</h3>
+          <p>Git; GitHub; Docker; Kong API Gateway; CircleCI; GitHub Actions; REST API; Swagger/OpenAPI Specifications, Nginx.</p>
+    
+          <h3>SecOps</h3>
+          <p>Oauth/OpenID; Multi-Factor Authentication; Risk Authentication.</p>
+    
+          <h3>OS / Tools</h3>
+          <p>Debian and Ubuntu based Linux; PyCharm; Android Studio.</p>
+        </div>
+
+        <!-- Links -->
+        <div>
+          <h2>Links</h2>
+
+          <h3>GitHub</h3>
+          <p><a href="https://github.com/rodzera" target="_blank"><i>https://github.com/rodzera</i></a></p>
+
+          <h3>Linkedin</h3>
+          <p><a href="https://www.linkedin.com/in/rodnascimentolopes" target="_blank"><i>www.linkedin.com/in/rodnascimentolopes</i></a></p> 
+        </div>
+
+      </section>
+    </main>    
+  </body>
 </html>
