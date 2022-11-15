@@ -13,7 +13,7 @@ jobs:
         with:
           htmlFile: src/index.html
           outputFile: src/resume.pdf
-          pdfOptions: '{"format": "A3", "scale": 0.66, "margin": {"top": "0", "left": "0", "right": "0", "bottom": "0"}}'
+          pdfOptions: '{"format": "A3", "scale": 0.80, "margin": {"top": "0", "left": "0", "right": "0", "bottom": "0"}}'
       - name: Release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
