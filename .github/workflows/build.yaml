@@ -1,5 +1,7 @@
 name: Build resume
-on: push
+on: 
+  push:
+    paths: ['src/**']
 jobs:
   build_pdf:
     runs-on: ubuntu-latest
