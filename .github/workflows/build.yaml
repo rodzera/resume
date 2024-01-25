@@ -1,4 +1,4 @@
-name: Build resume
+name: Build pdf
 on: 
   push:
     paths: ['src/**']
