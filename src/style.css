@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Arimo:wght@300;400;500;700&display=swap');
 
 html {
-  font-family:  "Roboto";
+  font-family:  "Arimo";
   color: #222;
   text-shadow: none;
   font-size: 17px;
@@ -10,15 +10,7 @@ html {
 body {
   max-width: 65%;
   margin: 25px auto;
-  padding: 0 50px 35px;
-}
-
-h1, h2 {
-  text-transform: uppercase;
-  border: 2px solid;
-  display: inline-block;
-  padding: 10px 20px;
-  margin: 35px 0 0;
+  padding: 25px 50px;
 }
 
 a {
@@ -26,7 +18,19 @@ a {
   color: #337ab7;
 }
 
+h1, h2 {
+  text-transform: uppercase;
+  border: 2px solid;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+h1 {
+  margin: 0 0 15px;
+}
+
 h2 {
+  margin: 35px 0 0;
   margin-bottom: 15px;
 }
 
@@ -42,19 +46,19 @@ h4 {
 }
 
 header {
-  padding: 15px;
   text-align: center;
   border-bottom: 2px solid;
+  padding: 15px 0;
 }
 
 main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 60px;
+  padding: 15px 0;
 }
 
 header p {
-  padding-top: 10px;
   line-height: 22px;
 }
 
@@ -70,28 +74,26 @@ p, li {
   font-size: 1.1rem;
 }
 
-small {
-  display: block;
-  font-weight: 500;
-  font-size: 12px;
-}
-
 span {
   font-weight: 500;
 }
 
-.profile {
-  margin-top: 10px;
+ul {
+  margin: 0;
 }
 
-ul {
-  margin-top: 0;
-  margin-bottom: 0;
+header div:nth-of-type(2) p {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+
+.info p {
+  margin: 0;
+  padding: 0;
 }
 
 /* mobile portrait */
 @media (max-width: 480px) {
-
   body {
     font-size: 13px;
   }
@@ -99,21 +101,17 @@ ul {
   .content h2 {
     text-align: center;
   }
-
 }
 
 /* tablets and mobile landscape */
 @media (max-width: 768px) {
-
   body {
     font-size: 15px;
   }
-
 }
 
 /* desktops */
 @media (max-width: 1025px) {
-
   main {
     grid-template-columns: 1fr;
     gap: 0;
@@ -123,5 +121,4 @@ ul {
     text-align: center;
     margin-bottom: 0;
   }
-
 }
