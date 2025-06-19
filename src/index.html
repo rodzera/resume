@@ -1,121 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resume - Rodrigo N. Lopes</title>
-    <link rel="stylesheet" href="./style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Rodrigo N. Lopes</h1>
-      <div class="info">
-        <p><span>Phone:</span> <a href="tel:+5511930779075">+55 11 93077-9075</a></p>
-        <p><span>Email:</span> <a href="mailto:work@rodrigonl.com" target="_blank" rel="noopener noreferrer">work@rodrigonl.com</a></p>
-        <p><span>Portfolio:</span> <a href="https://github.com/rodzera" target="_blank">github.com/rodzera</a></p>
-        <p><span>Linkedin:</span> <a href="https://www.linkedin.com/in/rodzera" target="_blank">linkedin.com/in/rodzera</a></p>
-        <p><span>São Paulo - Brazil</span></p>
-      </div>
-    </header>
-    <main>
-      <section>
 
-        <!-- About Me -->
-        <div class="content">
-          <div class="content-h2">
-            <h2>About Me</h2>
-          </div>
-          <p>Mid-level software engineer with 4+ years of experience in web development, specializing in backend engineering. Also skilled in frontend development, DevOps, and cybersecurity.</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rodrigo N. Lopes - Resume</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+<div class="container">
+
+  <!-- Header -->
+  <header class="text-center mb-4">
+    <h1 class="fw-bold">RODRIGO N. LOPES</h1>
+    <p>
+      São Paulo, Brazil |
+      <a href="mailto:work@rodrigonl.com" target="_blank" rel="noopener noreferrer">work@rodrigonl.com</a> |
+      <a href="https://linkedin.com/in/rodzera" target="_blank">linkedin.com/in/rodzera</a> |
+      <a href="https://github.com/rodzera" target="_blank">github.com/rodzera</a>
+    </p>
+  </header>
+
+  <!-- Summary -->
+  <section class="mb-4">
+    <h3 class="section-title">ABOUT ME</h3>
+    <p>Software engineer with 4+ years of experience in web development, specializing in backend engineering. Also
+      skilled in frontend development, DevOps, and cybersecurity.</p>
+  </section>
+
+  <!-- Professional Experience -->
+  <section class="mb-4">
+    <h3 class="section-title">PROFESSIONAL EXPERIENCE</h3>
+
+    <div>
+      <div class="flex-between">
+        <div>
+          <h5 class="fw-bold mb-1">Sec4U Cyber Identity</h5>
+          <p class="fst-italic mb-0">Mid-Level Software Engineer</p>
+          <p class="fst-italic mb-0">Junior Software Engineer</p>
+          <p class="fst-italic mb-0">Intern Software Engineer</p>
         </div>
-
-        <!-- Education -->
-        <div class="content">
-          <div class="content-h2">
-            <h2>Education</h2>
-          </div>
-
-          <h3>Technologist Degree at International University Center (UNINTER)</h3>
-          <p><span>Course:</span> Systems Analysis and Development (Feb 2024 - present).<br><span>Status:</span> Ongoing.</p>
-
-          <h3>Technologist Degree at College of Technology of São Caetano do Sul (FATEC-SCS)</h3>
-          <p><span>Course:</span> Systems Analysis and Development (Aug 2019 - Dec 2023).<br><span>Status:</span> Transferred.</p>
-
-          <h3>Licentiate Degree at Pontifical Catholic University of São Paulo (PUC-SP)</h3>
-          <p><span>Course:</span> History (Feb 2015 - Dec 2017).<br><span>Status:</span> Completed.</p>
-
-        </div>
-
-        <!-- Skills -->
-        <div class="content">
-          <div class="content-h2">
-            <h2>Skills</h2>
-          </div>
-
-          <h3>Backend</h3>
-          <p>Python; Flask; Jinja; SQLAlchemy; Node.js.</p>
-          
-          <h3>Frontend</h3>
-          <p>JavaScript; HTML; CSS; Bootstrap; React Native.
-
-          <h3>Testing</h3>
-          <p>Unit Testing; Integration Testing; Behavior Driven Development (BDD); End-to-End Testing (E2E); Property-Based Testing.</p>
-
-          <h3>Database</h3>
-          <p>MySQL, Postgres, SQLite; Redis.</p>
-    
-          <h3>DevOps</h3>
-          <p>Git; Docker; AWS (ECS, EC2, RDS, S3); CI/CD (CircleCI, GitHub Actions); IaC (Terraform); Nginx; Bash scripting; Linux.</p>
-    
-          <h3>Security</h3>
-          <p>OATH; OAuth2; OpenID Connect (OIDC); Financial-Grade API (FAPI); Lightweight Directory Access Protocol (LDAP).</p>
-        </div>
-
-      </section>
-      <section>
-
-        <!-- Professional Experience -->
-        <div class="content">
-          <div class="content-h2">
-            <h2>Professional Experience</h2>
-          </div>
-
-          <h3>Sec4U Cyber Identity</h3>
-          <p><span>Positions:</span>
-            <ul>
-              <li>Mid-level Software Engineer (Jun 2023 - present).</li>
-              <li>Junior Software Engineer (Feb 2022 - May 2023).</li>
-              <li>Software Engineer Intern (Feb 2021 - Feb 2022).</li>
-            </ul>
-          </p>
-          <p>
-            <span>Summary:</span> Currently working as a full-stack software engineer focusing on developing and maintaining the authcube platform (SaaS and cloud-based IaaS solutions for AuthN and AuthZ services):<br>
-          </p>
+        <div class="text-end">
           <ul>
-            <li>
-              Implementing new features based on customer and stakeholder requirements, refactoring legacy Python code, applying design and architectural patterns, optimizing REST API and database performance.
-            </li>
-            <li>
-              Contributing to the development and certification of the company's Identity Provider (IdP) for OIDC and FAPI1-Advanced profiles under the OpenID Foundation, ensuring software compliance with RFCs standards.
-            </li>
-            <li>
-              Creating proof-of-concept applications to evaluate potential use of new technologies and services.
-            </li>
-            <li>
-              Developing internal software like an OIDC Relying Party backend to showcase identity flows and product features, helping sales teams attract potential customers.
-            </li>
-            <li>
-              Mentoring interns and collaborating on code reviews at all levels, contributing to skill development and ensuring high-quality code within the team.
-            </li>
+            <p class="mb-1">São Paulo, Brazil (Remote)</p>
+            <p class="mb-0">June/2023 – Present</p>
+            <p class="mb-0">Feb/2022 – May/2023</p>
+            <p class="mb-0">Feb/2021 – Feb/2022</p>
           </ul>
-          <p><span>Tech Stack:</span> Flask; Jinja; SQLAlchemy; JavaScript; Bootstrap; Docker; CircleCI; Linux; MySQL; AWS; OATH; OAuth2; OIDC; FAPI.</p>
 
-          <h3>Wifi Digital Marketing Agency</h3>
-          <p><span>Position:</span> Web Developer (Dec 2020 - Jan 2021).</p>
-          <p><span>Summary:</span> Development, maintenance, and hosting of WordPress websites.</p>
-          <p><span>Tech Stack:</span> PHP; Wordpress; Apache; HTML; CSS; JavaScript; Linux.</p>
         </div>
+      </div>
 
-      </section>
-    </main>    
-  </body>
+      <p class="mt-2">
+        Nationwide company with 100+ employees specialized in digital identity management for business customers (B2B). Its main
+        product, the Authcube platform, delivers SaaS and cloud-based IaaS solutions for authentication (AuthN) and
+        authorization (AuthZ), protecting identities at eight-digit scale.
+      </p>
+      <ul>
+        <li>Working as a full-stack engineer across 8+ projects, mentoring junior and intern engineers, and
+          collaborating on code reviews at all levels.
+        </li>
+        <li>Implementing features based on customer and stakeholder requirements, refactoring legacy Python code,
+          applying design and architectural patterns, optimizing REST API and database performance.
+        </li>
+        <li>Contributing to the development and certification of the company's Identity Provider (IdP) for OIDC and
+          FAPI1-Advanced profiles under the OpenID Foundation, ensuring software compliance with RFCs standards.
+        </li>
+        <li>Creating proof-of-concept applications to evaluate potential use of new technologies and services.</li>
+        <li>Developing internal software like an OIDC Relying Party backend to showcase identity flows and
+          product features, helping sales teams attract potential customers.
+        </li>
+        <li>Tech stack: Flask, Jinja, SQLAlchemy, JavaScript, Bootstrap, Docker, CircleCI, Linux, MySQL, AWS,
+          OATH, OAuth2, OIDC, FAPI.
+        </li>
+      </ul>
+    </div>
+
+    <div>
+      <div class="flex-between">
+        <div>
+          <h5 class="fw-bold mb-1">Wifi Agency</h5>
+          <p class="fst-italic mb-0">Web Developer</p>
+        </div>
+        <div class="text-end">
+          <ul>
+            <p class="mb-1">São Caetano, Brazil (Hybrid)</p>
+            <p class="mb-0">Dec/2011 – Jan/2022</p>
+          </ul>
+        </div>
+      </div>
+
+      <p class="mt-2">Digital marketing agency with 6+ employees offering website development, branding, and
+        digital advertising services.</p>
+      <ul>
+        <li>Worked as a full-stack developer hosting and developing WordPress websites.</li>
+        <li>Tech stack: PHP, WordPress, Apache, HTML, CSS, JavaScript, Linux.</li>
+      </ul>
+    </div>
+
+  </section>
+
+  <!-- Education -->
+  <section class="mb-4">
+    <h3 class="section-title">EDUCATION</h3>
+    <div>
+      <div class="flex-between mb-3">
+        <div>
+          <h5 class="fw-bold mb-0">Associate Degree in Systems Analysis and Development</h5>
+          <p class="fst-italic mb-1">International University Center (UNINTER)</p>
+        </div>
+        <div class="text-end">
+          <p class="mb-0">Ongoing</p>
+          <p class="mb-0">Feb/2024 - Present</p>
+        </div>
+      </div>
+      <div class="flex-between mb-3">
+        <div>
+          <h5 class="fw-bold mb-0">Associate Degree in Systems Analysis and Development</h5>
+          <p class="fst-italic mb-1"> College of Technology of São Caetano do Sul (FATEC-SCS)</p>
+        </div>
+        <div class="text-end">
+          <p class="mb-0">Transferred</p>
+          <p class="mb-0">Aug/2019 - Dec/2023</p>
+        </div>
+      </div>
+      <div class="flex-between mb-3">
+        <div>
+          <h5 class="fw-bold mb-0">Licentiate Degree in History</h5>
+          <p class="fst-italic mb-1">Pontifical Catholic University of São Paulo (PUC-SP)</p>
+        </div>
+        <div class="text-end">
+          <p class="mb-0">Completed</p>
+          <p class="mb-0">Feb/2015 - Dec/2017</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section class="mb-4">
+    <h3 class="section-title">SKILLS</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <ul>
+          <li><span>Backend</span>: Python, Flask, Jinja, SQLAlchemy, Node.js</li>
+          <li><span>Frontend</span>: HTML, CSS, Bootstrap, JavaScript, React Native</li>
+          <li><span>Testing</span>: Unit Testing, Integration Testing, Behavior Driven Development (BDD),
+            Property-Based Testing
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul>
+          <li><span>DevOps</span>: Git, Docker, Terraform, AWS (ECS, EC2, RDS, S3), CI/CD (CircleCI, GitHub
+            Actions), Nginx, Bash scripting, Linux
+          </li>
+          <li><span>Security</span>: OATH, OAuth2, OIDC, FAPI, MFA, LDAP</li>
+          <li><span>Database</span>: MySQL, Postgres, SQLite, Redis</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+</body>
+
 </html>
